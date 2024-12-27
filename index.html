@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Meine Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+  <img id="start" class="header-image"  src="img/car-keys.jpg">
+    
+ 
+  
+  <script src="script.js"></script>
+
+  <div  class="container">
+      <a href="#start"><img src="img/6I3y6j-LogoMakr.png" ></a> 
+      <div>
+        <a class="menu" href="#start">Startseite</a>
+        <a class="menu" href="#autos">Autos</a>
+        <a class="menu" href="#tabelle">Tabelle</a>
+        <a class="menu button" href="#kontakt">Kontakt</a>
+      </div>
+    </div>
+    <h1 class="headline"> bequem, einfach und zuverlässig </h1>
+  
+    <h1 id="autos" class="auto-start"> <div class="a">Autos</div> </h1>
+    <table class="content-table">
+      <thead>
+       
+        <tr>
+          <th>Foto</th>
+          <th>Marke</th>
+          <th>Schaltung</th>
+          <th>Tank</th>
+          <th>Preis pro Tag</th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+        <tr>
+          <td><img src="img/bmw.jpg" height="100" width="150"></td>
+          <td>BMW X3</td>
+          <td>Automat</td>
+          <td>Benzin</td>
+          <td>60 euro</td>
+        </tr>
+        
+        <tr>
+          <td><img src="img/audi a3.jpg" height="100" width="150"></td>
+          <td>Audi A3 Sportback</td>
+          <td>Automat</td>
+          <td>Diesel</td>
+          <td>70 euro</td>
+        </tr>
+
+        <tr>
+          <td><img src="img/vw golf.jpg" height="100" width="150"></td>
+          <td>VW Golf 8 GTI</td>
+          <td>Automat</td>
+          <td>Benzin</td>
+          <td>75 euro</td>
+        </tr>
+
+        <tr>
+          <td><img src="img/seat leon.jpg" height="100" width="150"></td>
+          <td>Seat Leon</td>
+          <td>Manuell</td>
+          <td>Benzin</td>
+          <td>50 euro</td>
+        </tr>
+
+        <tr>
+          <td><img src="img/audi a1.jpg" height="100" width="150"></td>
+          <td>Audi A1</td>
+          <td>Manuell</td>
+          <td>Benzin</td>
+          <td>50 euro</td>
+        </tr>
+
+        <tr>
+          <td><img src="img/mercedes c.jpg" height="100" width="150" ></td>
+          <td>Mercedes C W206</td>
+          <td>Automat</td>
+          <td>Benzin</td>
+          <td>80 euro</td>
+        </tr>
+
+      </tbody>
+      
+    </table>
+     
+    
+
+    <h1 id="tabelle" class="kunden-start"> 
+     Tabelle </h1>
+
+     <form id="kundenFormular">
+     
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+  
+      <label for="strasse">Address:</label>
+      <input type="text" id="address" name="address" required>
+  
+      <label for="telefon">Phone:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="telefon">Abteilung:</label>
+      <select id="abteilungen">
+        <option value="1">Entwicklung</option>
+        <option value="2">Personal</option>
+        <option value="3">Finanz</option>
+        <option value="4">Verwaltung</option>
+        <option value="5">Weiterbildung</option>
+      </select>
+  
+      <button type="button" id="hinzufuegenButton" onclick="add_data()">Eintrag hinzufügen</button>
+  </form>
+
+  <table class="kunden-tabelle" id="kundenTabelle">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Addresse</address></th>
+            <th>Phone</th>
+            <th>Abteilung_ID</th>
+            <th>Löschen</th>
+        </tr>
+    </thead>
+    <tbody id="data-id">       
+    
+    </tbody>
+</table>
+   
+   </div>
+   
+   <h1 id="kontakt" class="kontakt-start"> Kontakt </h1>
+
+  </div>
+
+  <div id="kontakt" class="last">
+  
+    <form id="kontaktFormular">
+      <label for="name">Name:</label>
+      <input type="text" id="kontaktName" name="kontaktName" required>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="kontaktEmail" name="kontaktEmail" required>
+  
+      <label for="nachricht">Nachricht:</label>
+      <textarea id="nachricht" name="nachricht" rows="4" required></textarea>
+  
+      <button type="button" id="sendenButton" onclick="sendeNachricht()">Nachricht senden</button>
+    </form>
+  
+    <div class="kontakt-info">
+      <h1>Adresse:</h1>
+      <p> Rent a Car GmbH</p>
+      <p> Musterstraße 123</p>
+      <p> 12345 Musterstadt</p>
+      <p>Telefon: +49 123 456 789</p>
+      <p>Email: info@meinewebsite.com</p>
+    </div>
+
+  </div>
+ 
+  <footer>
+  <p>© 2024 Meine Website. Alle Rechte vorbehalten.</p>
+  </footer>
+</body>
+
+</html>
