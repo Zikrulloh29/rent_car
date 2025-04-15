@@ -96,13 +96,13 @@ body{
     height: 100%;
     margin-right: auto;
     margin-left: auto;
-
+    margin-bottom: 4rem;
 }
 
 .content-table thead  {
     box-shadow: 0 3px 6px #000003;
-    background-color: rgb(9, 27, 81);
-    color: black;
+    background-color: #CD7F32;
+    color: white;
 }
 
 .content-table th,
