@@ -1,0 +1,42 @@
+[
+  {
+    "foto": "img/vw golf.jpg",
+    "marke": "Volkswagen Golf",
+    "getriebe": "Manuell",
+    "kraftstoff": "Benzin",
+    "preis": 45,
+    "status": "Verfügbar"
+  },
+  {
+    "foto": "img/bmw.jpg",
+    "marke": "BMW 3er",
+    "getriebe": "Automatik",
+    "kraftstoff": "Diesel",
+    "preis": 79,
+    "status": "Verfügbar"
+  },
+  {
+    "foto": "img/seat leon.jpg",
+    "marke": "Seat Leon",
+    "getriebe": "Automatik",
+    "kraftstoff": "Elektro",
+    "preis": 99,
+    "status": "Verfügbar"
+  },
+  {
+    "foto": "img/mercedes c.jpg",
+    "marke": "Mercedes-Benz C-Klasse",
+    "getriebe": "Automatik",
+    "kraftstoff": "Benzin",
+    "preis": 69,
+    "status": "Verfügbar"
+  },
+  {
+    "foto": "img/Renault.jpg",
+    "marke": "Renault Clio",
+    "getriebe": "Manuell",
+    "kraftstoff": "Diesel",
+    "preis": 39,
+    "status": "Verfügbar"
+  }
+]

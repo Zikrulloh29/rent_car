@@ -37,3 +37,27 @@ function zeigeAlleNachrichten() {
   const alleNachrichten = JSON.parse(localStorage.getItem("nachrichten")) || [];
   console.log("Alle gespeicherten Nachrichten:", alleNachrichten);
 }
+
+fetch("autos.json")
+  .then((response) => response.json())
+  .then((autos) => {
+    const tableBody = document.querySelector("#autos-table tbody");
+
+    autos.forEach((auto) => {
+      const row = document.createElement("tr");
+
+      row.innerHTML = `
+          <td><img src="${auto.foto}" alt="${auto.marke}" width="120"></td>
+          <td>${auto.marke}</td>
+          <td>${auto.getriebe}</td>
+          <td>${auto.kraftstoff}</td>
+          <td style="color: orange;">${auto.preis} €</td>
+          <td>${auto.status}</td>
+        `;
+
+      tableBody.appendChild(row);
+    });
+  })
+  .catch((error) => {
+    console.error("Fehler beim Laden der Fahrzeugdaten:", error);
+  });
